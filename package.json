@@ -1,0 +1,22 @@
+{
+  "name": "simple-background-generator",
+  "version": "1.0.0",
+  "description": "A simple background generator",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rllongstaff/simple-background-generator.git"
+  },
+  "author": "Russell Longstaff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rllongstaff/simple-background-generator/issues"
+  },
+  "homepage": "https://github.com/rllongstaff/simple-background-generator#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
