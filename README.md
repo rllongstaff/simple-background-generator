@@ -3,7 +3,7 @@
 A simple background gradient generator that uses JavaScript
 
 
-### View it here
-rllongstaff.github.io/simple-background-generator
+### Demo here
+https://rllongstaff.github.io/simple-background-generator/
 
 
