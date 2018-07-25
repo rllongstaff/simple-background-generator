@@ -1,3 +1,83 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px   10px / 16px = 62.5%
+}
+
 body {
-    background-color: red; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: linear-gradient(to bottom, #ccc, #777); 
+    padding: 2rem 0 1rem;
+
+    &__heading {
+        color: #fff;
+        font-size: 8rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        text-transform: uppercase 
+    }
+}
+
+.section {
+    padding: 2rem 0;
+
+    &__heading {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &--background {
+        background: linear-gradient(to right, blue, pink);
+        height: 70vh; 
+    } 
 } 
+
+.colour-controls {
+    background: #fff;
+    border: 1px solid #ccc; 
+    display: grid;
+    grid: auto / repeat(2, 1fr);  
+    margin: 0 auto;
+    padding: 1rem;
+    width: 20%;
+
+    &__control {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    &__input {
+        margin-bottom: 1rem; 
+    }
+}
+
+.css-text {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.footer {
+    background: linear-gradient(to top, #ccc, #777);
+    padding: 1rem 0 10rem;
+
+    &__copy {
+        color: #fff; 
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}

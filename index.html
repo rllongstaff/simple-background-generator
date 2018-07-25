@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A Simple JavaScript Background Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -12,11 +13,24 @@
         <h1 class="header__heading">Background Generator</h1>
     </header>
     <section class="section section--background">
-        <h2>Current CSS Background</h2>
+        <div class="colour-controls">
+            <div class="colour-controls__control">
+                <input type="color" class="color-1 colour-controls__input" name="color1" value="#333333" id="color-1">
+                <label for="color-1" class="label">Colour 1</label>
+            </div>
+            <div class="colour-controls__control">
+                <input type="color" class="color-2 colour-controls__input" name="color2" value="#cccccc" id="color-2">
+                <label for="color-2" class="label">Colour 2</label>  
+            </div>
+        </div>      
+    </section>
+    <section class="section section--plain">
+        <h2 class="section__heading">Current CSS Background</h2>
+        <h3 class="css-text"></h3>
     </section>
     <footer class="footer">
         <p class="footer__copy">&copy;2018 Russell Longstaff</p>
     </footer>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
